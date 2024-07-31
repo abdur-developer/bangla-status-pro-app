@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "262549059719",
+    "project_id": "bangla-status-d07e6",
+    "storage_bucket": "bangla-status-d07e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262549059719:android:6553a649a289be9866e022",
+        "android_client_info": {
+          "package_name": "com.srsoftlimited.banglastatusobanicaption"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXm_kUtD-2_5VpEKJPi9XVqmt4GsaiFfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

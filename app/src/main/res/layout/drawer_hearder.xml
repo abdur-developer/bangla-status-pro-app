@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/status_back">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="142dp"
+            android:layout_height="124dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/soybur" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/title"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="বাংলা স্ট্যাটাস ও বাণী ক্যাপশন"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

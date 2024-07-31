@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#089FE3"
+    tools:context=".Splash_Screen">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imagesplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/title"
+        android:gravity="center"
+        android:text=" বাংলা স্ট্যাটাস \nও বাণী ক্যাপশন"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imagesplash"
+        android:layout_width="290dp"
+        android:layout_height="234dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20sp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagesplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/sundori"
+        android:text="Welcome To Apps"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progressBar"
+        android:layout_width="244dp"
+        android:layout_height="147dp"
+        android:layout_below="@id/textView2"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_circel" />
+
+
+</RelativeLayout>
+
+
+
+

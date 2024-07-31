@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ads.FavoriteActivity">
+
+    <RelativeLayout
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#089FE3"
+
+        >
+
+        <ImageView
+            android:id="@+id/back_home"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/baseline_keyboard_backspace_24" />
+
+        <TextView
+            android:id="@+id/title_heder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/title"
+            android:text="পছন্দের তালিকা"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/materialToolbar"
+        android:listSelector="@android:color/transparent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="allClear"
+        android:padding="10dp"
+        app:cardBackgroundColor="#E57373"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/clear" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
